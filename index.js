@@ -17,7 +17,7 @@ app.use(cors());
 app.use('/posts', postRoutes);
 
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 
 
 async function start() {
