@@ -2,7 +2,7 @@ import express from 'express'
 
 import { getPosts, getPost, createPost, updatePost, likePost, deletePost } from '../controllers/posts.js';
 
-const postRoutes = express.Router()
+const router = express.Router()
 //https:localhost:5000/posts
 
 router.get('/', getPosts);
@@ -13,4 +13,4 @@ router.delete('/:id', deletePost);
 router.patch('/:id/likePost', likePost);
 
 
-export default postRoutes;
+export default router;
